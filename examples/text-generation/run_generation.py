@@ -305,6 +305,7 @@ def setup_parser(parser):
         help="Whether to load model from hugging face checkpoint.",
     )
 
+    parser.add_argument(
         "--parallel_strategy",
         type=str,
         choices=["tp", "none"],  # Add other strategies as needed
